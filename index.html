@@ -1,0 +1,2303 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futterstation – Hochwertige Design-Näpfe für Hunde & Katzen | TIERISCH EDEL</title>
+    <meta name="description" content="Entdecke edle Futterstationen für Hunde und Katzen! ✓ Ergonomisches Design ✓ Hochwertige Materialien ✓ Perfekte Wohnraumintegration ✓ Jetzt Futterstation online bestellen bei TIERISCH EDEL!">
+    <style>
+        /* Schriftarten */
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap');
+        
+        /* Farbvariablen */
+        :root {
+            /* Primäre Farben */
+            --primary-dark: #1A1A1A;
+            --primary-light: #FFFFFF;
+            
+            /* Akzentfarben */
+            --accent-gold: #D4AF37;
+            --accent-copper: #B87333;
+            
+            /* Neutrale Töne */
+            --neutral-100: #F8F9FA;
+            --neutral-200: #E9ECEF;
+            --neutral-300: #DEE2E6;
+            --neutral-800: #343A40;
+            
+            /* Glassmorphismus */
+            --glass-white: rgba(255, 255, 255, 0.15);
+            --glass-dark: rgba(26, 26, 26, 0.75);
+            --glass-blur: 20px;
+            --glass-border: 1px solid rgba(255, 255, 255, 0.18);
+            
+            /* Schatten */
+            --shadow-soft: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
+            --shadow-strong: 0 8px 32px 0 rgba(0, 0, 0, 0.16);
+            
+            /* Legacy-Variablen für Kompatibilität */
+            --primary-color: var(--primary-dark);
+            --secondary-color: var(--neutral-100);
+            --accent-color: var(--accent-gold);
+            --accent-color-dark: var(--accent-copper);
+            --font-heading: 'Cormorant Garamond', serif;
+            --font-body: 'Montserrat', sans-serif;
+        }
+        
+        /* Grundlegende Stile */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: var(--font-body);
+            font-weight: 300;
+            line-height: 1.8;
+            color: var(--primary-dark);
+            background-color: var(--neutral-100);
+        }
+        
+        /* Typografie */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: var(--font-heading);
+            font-weight: 400;
+            letter-spacing: 0.02em;
+        }
+        
+        h1 {
+            font-size: 4rem;
+            line-height: 1.2;
+            font-weight: 300;
+        }
+        
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            position: relative;
+        }
+        
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: var(--accent-gold);
+        }
+        
+        /* Header und Navigation */
+        header {
+            background: var(--glass-dark);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-bottom: var(--glass-border);
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+            transition: all 0.3s ease;
+            padding: 20px 0;
+        }
+        
+        header.scrolled {
+            background: rgba(26, 26, 26, 0.95);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: var(--font-heading);
+            font-size: 1.8rem;
+            font-weight: 300;
+            color: var(--primary-light);
+            letter-spacing: 0.1em;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: var(--primary-light);
+            font-weight: 400;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            position: relative;
+            padding: 0.5rem 0;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--accent-gold);
+            transition: width 0.3s ease;
+        }
+        
+        nav ul li a:hover::after {
+            width: 100%;
+        }
+        
+        /* Hero-Bereich */
+        .hero {
+            height: 100vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            background-image: url('https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?q=80&w=2069');
+            padding-top: 80px; /* Für den fixen Header */
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(26, 26, 26, 0.7) 0%, rgba(26, 26, 26, 0.3) 100%);
+            z-index: 1;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            max-width: 800px;
+            padding: 3rem;
+            background: var(--glass-dark);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            box-shadow: var(--shadow-soft);
+            transform: translateY(20px);
+            opacity: 0;
+            animation: fadeUp 1s ease forwards 0.5s;
+        }
+        
+        .hero h1 {
+            color: var(--primary-light);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .hero h1::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 1px;
+            background: var(--accent-gold);
+        }
+        
+        .hero p {
+            color: var(--neutral-200);
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .btn-hero {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: transparent;
+            color: var(--primary-light);
+            border: 1px solid var(--accent-gold);
+            border-radius: 50px;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            text-decoration: none;
+        }
+        
+        .btn-hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--accent-gold);
+            transition: all 0.3s ease;
+            z-index: -1;
+        }
+        
+        .btn-hero:hover::before {
+            width: 100%;
+        }
+        
+        .btn-hero:hover {
+            color: var(--primary-dark);
+        }
+        
+        /* Sektionen */
+        section {
+            padding: 100px 0;
+        }
+        
+        section h2 {
+            font-family: var(--font-heading);
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            position: relative;
+        }
+        
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: var(--accent-gold);
+        }
+        
+        /* Intro-Sektion */
+        .intro {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+        }
+        
+        .intro-content {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+        
+        .intro-text {
+            flex: 1;
+        }
+        
+        .intro-image {
+            flex: 1;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            position: relative;
+        }
+        
+        .intro-image::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(184, 115, 51, 0.2) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+        
+        .intro-image:hover::before {
+            opacity: 1;
+        }
+        
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .intro-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        /* Features-Sektion */
+        .features {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+        }
+        
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+        
+        .feature-card {
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            padding: 3rem 2rem;
+            text-align: center;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(184, 115, 51, 0.1) 100%);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            z-index: -1;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .feature-card:hover::before {
+            opacity: 1;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .feature-icon::after {
+            content: '';
+            position: absolute;
+            width: 50px;
+            height: 1px;
+            background: var(--accent-gold);
+            bottom: -0.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .feature-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+        
+        .feature-card p {
+            color: var(--neutral-800);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+        
+        /* Kategorien-Sektion */
+        .categories {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+        }
+        
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+        
+        .category-card {
+            position: relative;
+            border-radius: 20px;
+            overflow: hidden;
+            height: 350px;
+            box-shadow: var(--shadow-soft);
+            transition: all 0.5s ease;
+        }
+        
+        .category-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+        
+        .category-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 2rem;
+            background: var(--glass-dark);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-top: var(--glass-border);
+            transform: translateY(70%);
+            transition: transform 0.5s ease;
+        }
+        
+        .category-card:hover .category-overlay {
+            transform: translateY(0);
+        }
+        
+        .category-card:hover img {
+            transform: scale(1.1);
+        }
+        
+        .category-overlay h3 {
+            color: var(--primary-light);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-overlay p {
+            color: var(--neutral-300);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease 0.2s;
+        }
+        
+        .category-card:hover .category-overlay p {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .category-link {
+            display: inline-block;
+            color: var(--accent-gold);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            position: relative;
+            padding-bottom: 5px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.3s ease 0.3s;
+            text-decoration: none;
+        }
+        
+        .category-card:hover .category-link {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .category-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: var(--accent-gold);
+            transform: scaleX(0);
+            transform-origin: right;
+            transition: transform 0.3s ease;
+        }
+        
+        .category-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+        
+        /* Auszeichnungen-Sektion */
+        .awards {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+            text-align: center;
+        }
+        
+        .awards::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYwYzkuOTQgMCAxOCA4LjA2IDE4IDE4aDEuNWE0LjUgNC41IDAgMDEwIDloLTZhNC41IDQuNSAwIDAxMC05SDM2eiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIuMSIvPjwvZz48L3N2Zz4=');
+            opacity: 0.05;
+            z-index: 0;
+        }
+        
+        .awards-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin-bottom: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .award {
+            text-align: center;
+            max-width: 200px;
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            padding: 2rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .award:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .award-icon {
+            font-size: 3rem;
+            color: var(--accent-gold);
+            margin-bottom: 1.5rem;
+        }
+        
+        .award h3 {
+            font-family: var(--font-heading);
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .ratings {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .rating {
+            text-align: center;
+            padding: 2rem;
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            min-width: 200px;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .rating:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .rating-source {
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+        
+        .rating-stars {
+            color: var(--accent-gold);
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .rating-count {
+            font-size: 14px;
+            color: var(--neutral-800);
+        }
+        
+        /* Testimonials-Sektion */
+        .testimonials {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYwYzkuOTQgMCAxOCA4LjA2IDE4IDE4aDEuNWE0LjUgNC41IDAgMDEwIDloLTZhNC41IDQuNSAwIDAxMC05SDM2eiIgZmlsbD0iI0Q0QUYzNyIgZmlsbC1vcGFjaXR5PSIuMSIvPjwvZz48L3N2Zz4=');
+            opacity: 0.03;
+            z-index: 0;
+        }
+        
+        .testimonial-slider {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        
+        .testimonial {
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            padding: 3rem;
+            box-shadow: var(--shadow-soft);
+            text-align: center;
+            transition: all 0.5s ease;
+            opacity: 0;
+            transform: scale(0.95);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        
+        .testimonial.active {
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+            display: block;
+        }
+        
+        .testimonial-quote {
+            font-family: var(--font-heading);
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: var(--primary-dark);
+            margin-bottom: 2rem;
+            position: relative;
+            padding: 0 2rem;
+        }
+        
+        .testimonial-quote::before,
+        .testimonial-quote::after {
+            content: '"';
+            font-family: Georgia, serif;
+            font-size: 4rem;
+            color: var(--accent-gold);
+            opacity: 0.3;
+            position: absolute;
+        }
+        
+        .testimonial-quote::before {
+            top: -2rem;
+            left: 0;
+        }
+        
+        .testimonial-quote::after {
+            bottom: -3rem;
+            right: 0;
+            transform: rotate(180deg);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .testimonial-author img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid var(--accent-gold);
+        }
+        
+        .testimonial-author-info {
+            text-align: left;
+        }
+        
+        .testimonial-author-name {
+            font-weight: 600;
+            color: var(--primary-dark);
+        }
+        
+        .testimonial-author-title {
+            font-size: 0.8rem;
+            color: var(--neutral-800);
+        }
+        
+        .testimonial-controls {
+            display: flex;
+            justify-content: center;
+            margin-top: 2rem;
+            gap: 0.5rem;
+        }
+        
+        .testimonial-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--neutral-300);
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-dot.active {
+            background: var(--accent-gold);
+            transform: scale(1.2);
+        }
+        
+        /* Konfigurator-Sektion */
+        .configurator {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+        }
+        
+        .configurator-container {
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            padding: 3rem;
+            box-shadow: var(--shadow-soft);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .configurator-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .configurator-steps::before {
+            content: '';
+            position: absolute;
+            top: 15px;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: var(--neutral-300);
+            z-index: 1;
+        }
+        
+        .configurator-step {
+            position: relative;
+            z-index: 2;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: var(--neutral-200);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 500;
+            color: var(--neutral-800);
+            transition: all 0.3s ease;
+        }
+        
+        .configurator-step.active {
+            background: var(--accent-gold);
+            color: var(--primary-light);
+            transform: scale(1.2);
+            box-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+        }
+        
+        .configurator-step.completed {
+            background: var(--accent-copper);
+            color: var(--primary-light);
+        }
+        
+        .configurator-content {
+            display: none;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        
+        .configurator-content.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .configurator-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--primary-dark);
+        }
+        
+        .configurator-options {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .configurator-option {
+            background: var(--primary-light);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: var(--shadow-soft);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            border: 2px solid transparent;
+        }
+        
+        .configurator-option:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .configurator-option.selected {
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+        
+        .configurator-option img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+        
+        .configurator-option h4 {
+            font-size: 1.2rem;
+            margin: 15px 0 5px;
+            color: var(--primary-dark);
+        }
+        
+        .configurator-option p {
+            font-size: 0.9rem;
+            color: var(--neutral-800);
+            margin-bottom: 15px;
+        }
+        
+        .configurator-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+        }
+        
+        .btn-configurator {
+            padding: 0.8rem 2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: none;
+        }
+        
+        .btn-prev {
+            background: var(--neutral-300);
+            color: var(--neutral-800);
+        }
+        
+        .btn-next, .btn-add, #add-to-cart {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            font-weight: 500;
+        }
+        
+        .btn-configurator:hover, #add-to-cart:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .configurator-preview {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .configurator-preview img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: var(--shadow-strong);
+        }
+        
+        .configurator-summary {
+            margin-top: 2rem;
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 15px;
+            border: var(--glass-border);
+            padding: 2rem;
+        }
+        
+        .configurator-summary h3 {
+            text-align: left;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+        
+        .configurator-summary-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--neutral-300);
+        }
+        
+        .configurator-summary-item:last-child {
+            border-bottom: none;
+        }
+        
+        .configurator-total {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: var(--primary-dark);
+            text-align: right;
+            margin-top: 1.5rem;
+        }
+        
+        /* FAQ-Sektion */
+        .faq {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+        }
+        
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .faq-item {
+            margin-bottom: 1.5rem;
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 15px;
+            border: var(--glass-border);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .faq-item:hover {
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .faq-question {
+            padding: 1.5rem;
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary-dark);
+            transition: all 0.3s ease;
+        }
+        
+        .faq-question span:last-child {
+            color: var(--accent-gold);
+            font-size: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        
+        .faq-question.active span:last-child {
+            transform: rotate(45deg);
+        }
+        
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+            padding: 0 1.5rem;
+        }
+        
+        .faq-answer.active {
+            max-height: 500px;
+            padding-bottom: 1.5rem;
+        }
+        
+        .faq-answer p {
+            color: var(--neutral-800);
+            line-height: 1.8;
+            font-size: 0.95rem;
+        }
+        
+        /* Kontakt-Sektion */
+        .contact {
+            background: linear-gradient(135deg, var(--neutral-100) 0%, var(--neutral-200) 100%);
+            position: relative;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .contact-info {
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            padding: 3rem;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .contact-info h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--primary-dark);
+        }
+        
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            color: var(--neutral-800);
+            line-height: 1.8;
+        }
+        
+        .contact-info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-form {
+            background: var(--glass-white);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border-radius: 20px;
+            border: var(--glass-border);
+            padding: 3rem;
+            box-shadow: var(--shadow-soft);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--primary-dark);
+            font-size: 0.9rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--neutral-300);
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            font-family: var(--font-body);
+            font-size: 0.95rem;
+            transition: all 0.3s ease;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent-gold);
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.2);
+        }
+        
+        textarea.form-control {
+            height: 150px;
+            resize: none;
+        }
+        
+        .btn-submit {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            border: none;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-submit:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-soft);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--neutral-200);
+            position: relative;
+            overflow: hidden;
+            padding: 60px 0 30px;
+        }
+        
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zNiAxOGMwLTkuOTQtOC4wNi0xOC0xOC0xOFYwYzkuOTQgMCAxOCA4LjA2IDE4IDE4aDEuNWE0LjUgNC41IDAgMDEwIDloLTZhNC41IDQuNSAwIDAxMC05SDM2eiIgZmlsbD0iI0ZGRkZGRiIgZmlsbC1vcGFjaXR5PSIuMDUiLz48L2c+PC9zdmc+');
+            opacity: 0.05;
+            z-index: 0;
+        }
+        
+        .footer-content {
+            position: relative;
+            z-index: 1;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 3rem;
+            margin-bottom: 40px;
+        }
+        
+        .footer-column h3 {
+            color: var(--primary-light);
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: -0.5rem;
+            left: 0;
+            width: 30px;
+            height: 1px;
+            background: var(--accent-gold);
+        }
+        
+        .footer-column p {
+            color: var(--neutral-300);
+            font-size: 0.9rem;
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+        }
+        
+        .footer-column ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-column ul li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-column ul li a {
+            color: var(--neutral-300);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .footer-column ul li a::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--accent-gold);
+            opacity: 0.5;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-column ul li a:hover {
+            color: var(--accent-gold);
+            padding-left: 20px;
+        }
+        
+        .footer-column ul li a:hover::before {
+            opacity: 1;
+        }
+        
+        .copyright {
+            text-align: center;
+            padding: 2rem 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: var(--neutral-300);
+            font-size: 0.9rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-light);
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: translateY(-3px);
+        }
+        
+        /* Scroll-to-Top Button */
+        .scroll-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--glass-dark);
+            backdrop-filter: blur(var(--glass-blur));
+            -webkit-backdrop-filter: blur(var(--glass-blur));
+            border: var(--glass-border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(20px);
+            transition: all 0.3s ease;
+            z-index: 999;
+        }
+        
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+        
+        .scroll-top:hover {
+            background: var(--accent-gold);
+            color: var(--primary-dark);
+            transform: translateY(-5px);
+        }
+        
+        /* Animationen */
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadeLeft {
+            from {
+                opacity: 0;
+                transform: translateX(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes fadeRight {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+        
+        /* Reveal-Klassen für Scroll-Animationen */
+        .reveal {
+            opacity: 0;
+            transition: all 0.8s ease;
+        }
+        
+        .reveal.active {
+            opacity: 1;
+        }
+        
+        .reveal-up {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-up.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .reveal-left {
+            opacity: 0;
+            transform: translateX(-50px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        .reveal-right {
+            opacity: 0;
+            transform: translateX(50px);
+            transition: all 0.8s ease;
+        }
+        
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+        
+        /* Benutzerdefinierter Cursor */
+        .custom-cursor {
+            position: fixed;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            background: rgba(212, 175, 55, 0.3);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            pointer-events: none;
+            transform: translate(-50%, -50%);
+            z-index: 9999;
+            transition: all 0.3s ease;
+            mix-blend-mode: difference;
+        }
+        
+        .custom-cursor.expanded {
+            width: 50px;
+            height: 50px;
+            background: rgba(212, 175, 55, 0.2);
+            mix-blend-mode: normal;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .container {
+                max-width: 960px;
+            }
+            
+            .features-grid,
+            .category-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 992px) {
+            .container {
+                max-width: 720px;
+            }
+            
+            h1 {
+                font-size: 3rem;
+            }
+            
+            h2 {
+                font-size: 2.5rem;
+            }
+            
+            .intro-content {
+                flex-direction: column;
+                gap: 3rem;
+            }
+            
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                max-width: 540px;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1rem;
+            }
+            
+            nav ul li {
+                margin-left: 0;
+            }
+            
+            .features-grid,
+            .category-grid,
+            .configurator-options {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 576px) {
+            .container {
+                max-width: 100%;
+                padding: 0 1.5rem;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            h2 {
+                font-size: 2rem;
+            }
+            
+            .hero-content {
+                padding: 2rem;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .ratings {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="custom-cursor"></div>
+
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="#" class="logo">TIERISCH EDEL</a>
+                <nav>
+                    <ul>
+                        <li><a href="#intro">Über uns</a></li>
+                        <li><a href="#features">Vorteile</a></li>
+                        <li><a href="#categories">Produkte</a></li>
+                        <li><a href="#configurator">Konfigurator</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Futterstation</h1>
+            <p>Hochwertige Design-Näpfe für Hunde & Katzen, die Funktionalität und Ästhetik perfekt vereinen.</p>
+            <a href="#configurator" class="btn-hero">Jetzt konfigurieren</a>
+        </div>
+    </section>
+
+    <section class="intro reveal-up" id="intro">
+        <div class="container">
+            <h2>Über uns</h2>
+            <div class="intro-content">
+                <div class="intro-text reveal-left">
+                    <p>Bei TIERISCH EDEL verbinden wir Leidenschaft für Tiere mit exzellentem Design. Unsere Futterstationen sind nicht nur funktional, sondern auch ästhetisch ansprechend und fügen sich nahtlos in jedes Wohnambiente ein.</p>
+                    <p>Jedes Produkt wird aus hochwertigen, nachhaltigen Materialien gefertigt und vereint ergonomisches Design mit zeitloser Eleganz. Wir glauben, dass Haustierzubehör genauso schön sein sollte wie der Rest deines Zuhauses.</p>
+                </div>
+                <div class="intro-image reveal-right">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2068" alt="TIERISCH EDEL Futterstation">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features reveal-up" id="features">
+        <div class="container">
+            <h2>Unsere Vorteile</h2>
+            <div class="features-grid">
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🌿</div>
+                    <h3>Nachhaltige Materialien</h3>
+                    <p>Alle unsere Produkte werden aus FSC-zertifiziertem Holz und anderen umweltfreundlichen Materialien hergestellt.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Preisgekröntes Design</h3>
+                    <p>Unsere Futterstationen wurden mit dem German Design Award Special Mention 2023 ausgezeichnet.</p>
+                </div>
+                <div class="feature-card reveal">
+                    <div class="feature-icon">🐾</div>
+                    <h3>Ergonomisch optimiert</h3>
+                    <p>Die richtige Höhe fördert eine gesunde Körperhaltung beim Fressen und beugt Verdauungsproblemen vor.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="categories reveal-up" id="categories">
+        <div class="container">
+            <h2>Unsere Produkte</h2>
+            <div class="category-grid">
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2068" alt="Futterstationen für Hunde">
+                    <div class="category-overlay">
+                        <h3>Futterstationen für Hunde</h3>
+                        <p>Ergonomisch optimierte Futterstationen in verschiedenen Größen für alle Hunderassen.</p>
+                        <a href="#" class="category-link">Mehr erfahren</a>
+                    </div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1604542031658-5799ca5d7936?q=80&w=2070" alt="Futterstationen für Katzen">
+                    <div class="category-overlay">
+                        <h3>Futterstationen für Katzen</h3>
+                        <p>Elegante und praktische Futterstationen, speziell für die Bedürfnisse von Katzen entwickelt.</p>
+                        <a href="#" class="category-link">Mehr erfahren</a>
+                    </div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1585846888147-bf2d4f7fa90c?q=80&w=1974" alt="Einzelne Näpfe">
+                    <div class="category-overlay">
+                        <h3>Einzelne Näpfe</h3>
+                        <p>Hochwertige Edelstahlnäpfe in verschiedenen Größen, spülmaschinenfest und langlebig.</p>
+                        <a href="#" class="category-link">Mehr erfahren</a>
+                    </div>
+                </div>
+                <div class="category-card reveal">
+                    <img src="https://images.unsplash.com/photo-1601758124510-52d02ddb7cbd?q=80&w=2088" alt="Zubehör">
+                    <div class="category-overlay">
+                        <h3>Zubehör</h3>
+                        <p>Passende Napfunterlagen, Pflegeprodukte und Ersatzteile für unsere Futterstationen.</p>
+                        <a href="#" class="category-link">Mehr erfahren</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="awards reveal-up" id="awards">
+        <div class="container">
+            <h2>Auszeichnungen & Bewertungen</h2>
+            <div class="awards-container">
+                <div class="award reveal">
+                    <div class="award-icon">🏆</div>
+                    <h3>German Design Award</h3>
+                    <p>Special Mention 2023</p>
+                </div>
+                <div class="award reveal">
+                    <div class="award-icon">🌿</div>
+                    <h3>Green Product Award</h3>
+                    <p>Finalist 2022</p>
+                </div>
+                <div class="award reveal">
+                    <div class="award-icon">🐾</div>
+                    <h3>Pet Innovation Award</h3>
+                    <p>Gewinner 2023</p>
+                </div>
+            </div>
+            <div class="ratings">
+                <div class="rating reveal">
+                    <div class="rating-source">Trustpilot</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-count">4.9/5 (256 Bewertungen)</div>
+                </div>
+                <div class="rating reveal">
+                    <div class="rating-source">Google</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-count">4.8/5 (189 Bewertungen)</div>
+                </div>
+                <div class="rating reveal">
+                    <div class="rating-source">Amazon</div>
+                    <div class="rating-stars">★★★★★</div>
+                    <div class="rating-count">4.7/5 (312 Bewertungen)</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials reveal-up" id="testimonials">
+        <div class="container">
+            <h2>Das sagen unsere Kunden</h2>
+            <div class="testimonial-slider">
+                <div class="testimonial active" id="testimonial-1">
+                    <div class="testimonial-quote">Die Futterstation ist nicht nur praktisch, sondern sieht auch fantastisch aus! Mein Hund frisst jetzt viel entspannter und ich muss nicht mehr ständig den Boden wischen. Absolut empfehlenswert!</div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070" alt="Sarah M.">
+                        <div class="testimonial-author-info">
+                            <div class="testimonial-author-name">Sarah M.</div>
+                            <div class="testimonial-author-title">Hundebesitzerin</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" id="testimonial-2">
+                    <div class="testimonial-quote">Endlich eine Futterstation, die zu meiner Einrichtung passt! Die Qualität ist hervorragend und meine beiden Katzen haben sich sofort daran gewöhnt. Das war definitiv eine gute Investition.</div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1974" alt="Thomas K.">
+                        <div class="testimonial-author-info">
+                            <div class="testimonial-author-name">Thomas K.</div>
+                            <div class="testimonial-author-title">Katzenbesitzer</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" id="testimonial-3">
+                    <div class="testimonial-quote">Als Innenarchitektin achte ich sehr auf Details. Die Futterstation von TIERISCH EDEL überzeugt nicht nur durch ihr Design, sondern auch durch die hervorragende Verarbeitung. Mein Hund und ich sind begeistert!</div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1974" alt="Laura B.">
+                        <div class="testimonial-author-info">
+                            <div class="testimonial-author-name">Laura B.</div>
+                            <div class="testimonial-author-title">Innenarchitektin</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial" id="testimonial-4">
+                    <div class="testimonial-quote">Nach langer Suche habe ich endlich die perfekte Futterstation für meinen großen Hund gefunden. Die erhöhte Position ist ideal für ihn und die Qualität ist erstklassig. Der Kundenservice war zudem sehr hilfreich bei der Auswahl.</div>
+                    <div class="testimonial-author">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1974" alt="Michael W.">
+                        <div class="testimonial-author-info">
+                            <div class="testimonial-author-name">Michael W.</div>
+                            <div class="testimonial-author-title">Hundebesitzer</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-controls">
+                <div class="testimonial-dot active" data-testimonial="testimonial-1"></div>
+                <div class="testimonial-dot" data-testimonial="testimonial-2"></div>
+                <div class="testimonial-dot" data-testimonial="testimonial-3"></div>
+                <div class="testimonial-dot" data-testimonial="testimonial-4"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="configurator reveal-up" id="configurator">
+        <div class="container">
+            <h2>Konfiguriere deine Futterstation</h2>
+            <div class="configurator-container">
+                <div class="configurator-steps">
+                    <div class="configurator-step active" id="step-indicator-1">1</div>
+                    <div class="configurator-step" id="step-indicator-2">2</div>
+                    <div class="configurator-step" id="step-indicator-3">3</div>
+                    <div class="configurator-step" id="step-indicator-4">4</div>
+                </div>
+                
+                <div class="configurator-content active" id="step-1">
+                    <h3>Schritt 1: Wähle dein Haustier</h3>
+                    <div class="configurator-options">
+                        <div class="configurator-option" data-value="dog">
+                            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2068" alt="Hund">
+                            <h4>Hund</h4>
+                            <p>Für alle Hunderassen</p>
+                        </div>
+                        <div class="configurator-option" data-value="cat">
+                            <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2043" alt="Katze">
+                            <h4>Katze</h4>
+                            <p>Für alle Katzenrassen</p>
+                        </div>
+                    </div>
+                    <div class="configurator-buttons">
+                        <button class="btn-configurator btn-next" id="next-1" disabled>Weiter</button>
+                    </div>
+                </div>
+                
+                <div class="configurator-content" id="step-2">
+                    <h3>Schritt 2: Wähle das Material</h3>
+                    <div class="configurator-options">
+                        <div class="configurator-option" data-value="oak">
+                            <img src="https://images.unsplash.com/photo-1566312296364-2199206933e5?q=80&w=2071" alt="Eiche">
+                            <h4>Eiche</h4>
+                            <p>Natürlich und robust</p>
+                        </div>
+                        <div class="configurator-option" data-value="walnut">
+                            <img src="https://images.unsplash.com/photo-1614495039153-e9cd13240509?q=80&w=2070" alt="Nussbaum">
+                            <h4>Nussbaum</h4>
+                            <p>Elegant und dunkel</p>
+                        </div>
+                        <div class="configurator-option" data-value="maple">
+                            <img src="https://images.unsplash.com/photo-1604715892639-61d265a3db9e?q=80&w=1974" alt="Ahorn">
+                            <h4>Ahorn</h4>
+                            <p>Hell und modern</p>
+                        </div>
+                    </div>
+                    <div class="configurator-buttons">
+                        <button class="btn-configurator btn-prev" id="prev-2">Zurück</button>
+                        <button class="btn-configurator btn-next" id="next-2" disabled>Weiter</button>
+                    </div>
+                </div>
+                
+                <div class="configurator-content" id="step-3">
+                    <h3>Schritt 3: Wähle die Napfgröße</h3>
+                    <div class="configurator-options">
+                        <div class="configurator-option" data-value="small">
+                            <img src="https://images.unsplash.com/photo-1585846888147-bf2d4f7fa90c?q=80&w=1974" alt="Klein">
+                            <h4>Klein</h4>
+                            <p>350ml pro Napf</p>
+                        </div>
+                        <div class="configurator-option" data-value="medium">
+                            <img src="https://images.unsplash.com/photo-1585846888147-bf2d4f7fa90c?q=80&w=1974" alt="Mittel">
+                            <h4>Mittel</h4>
+                            <p>700ml pro Napf</p>
+                        </div>
+                        <div class="configurator-option" data-value="large">
+                            <img src="https://images.unsplash.com/photo-1585846888147-bf2d4f7fa90c?q=80&w=1974" alt="Groß">
+                            <h4>Groß</h4>
+                            <p>1200ml pro Napf</p>
+                        </div>
+                    </div>
+                    <div class="configurator-buttons">
+                        <button class="btn-configurator btn-prev" id="prev-3">Zurück</button>
+                        <button class="btn-configurator btn-next" id="next-3" disabled>Weiter</button>
+                    </div>
+                </div>
+                
+                <div class="configurator-content" id="step-4">
+                    <h3>Schritt 4: Zusammenfassung</h3>
+                    <div class="configurator-preview">
+                        <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2068" alt="Vorschau deiner Futterstation" id="preview-image">
+                    </div>
+                    <div class="configurator-summary">
+                        <h3>Deine individuelle Futterstation</h3>
+                        <div class="configurator-summary-item">
+                            <span>Haustier:</span>
+                            <span id="summary-pet">-</span>
+                        </div>
+                        <div class="configurator-summary-item">
+                            <span>Material:</span>
+                            <span id="summary-material">-</span>
+                        </div>
+                        <div class="configurator-summary-item">
+                            <span>Napfgröße:</span>
+                            <span id="summary-bowl">-</span>
+                        </div>
+                        <div class="configurator-total">
+                            Gesamtpreis: <span id="summary-price">-</span>
+                        </div>
+                    </div>
+                    <div class="configurator-buttons">
+                        <button class="btn-configurator btn-prev" id="prev-4">Zurück</button>
+                        <button class="btn-configurator btn-add" id="add-to-cart">In den Warenkorb</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq reveal-up" id="faq">
+        <div class="container">
+            <h2>Häufig gestellte Fragen</h2>
+            <div class="faq-container">
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Warum ist die richtige Fresshöhe für mein Tier wichtig?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die richtige Fresshöhe ist entscheidend für die Gesundheit deines Tieres. Bei zu niedriger Position muss dein Hund oder deine Katze den Kopf stark nach unten neigen, was zu Belastungen der Halswirbelsäule und des Verdauungstrakts führen kann. Eine ergonomisch angepasste Futterstation ermöglicht eine natürlichere Körperhaltung beim Fressen, fördert eine gesunde Verdauung und kann Probleme wie Sodbrennen oder Blähungen reduzieren.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Welche Höhe ist für meinen Hund optimal?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die optimale Höhe einer Futterstation für deinen Hund hängt von seiner Schulterhöhe ab. Als Faustregel gilt: Der obere Rand des Napfes sollte etwa auf Höhe der Brust deines Hundes sein, sodass er seinen Kopf leicht senken muss, um zu fressen. Für kleine Hunde (bis 30 cm Schulterhöhe) empfehlen wir eine Napfhöhe von 10-15 cm, für mittelgroße Hunde (30-45 cm) etwa 15-25 cm und für große Hunde (über 45 cm) 25-35 cm. Unsere höhenverstellbaren Modelle lassen sich individuell an dein Tier anpassen.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Aus welchen Materialien werden eure Futterstationen hergestellt?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Unsere Futterstationen werden aus sorgfältig ausgewählten, hochwertigen und nachhaltigen Materialien gefertigt. Für die Holzelemente verwenden wir FSC-zertifiziertes Massivholz wie Eiche, Nussbaum oder Ahorn aus verantwortungsvoller Forstwirtschaft. Die Näpfe bestehen aus lebensmittelechtem Edelstahl, der spülmaschinenfest und besonders hygienisch ist. Je nach Modell kommen auch andere hochwertige Materialien wie recyceltes Aluminium, Keramik oder natürliche Öle und Wachse für die Oberflächenbehandlung zum Einsatz.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Wie pflege ich meine Futterstation richtig?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Die Pflege unserer Futterstationen ist denkbar einfach: Die Edelstahlnäpfe können in der Spülmaschine gereinigt werden. Die Holzoberflächen sollten regelmäßig mit einem leicht feuchten Tuch abgewischt werden. Verwende keine aggressiven Reinigungsmittel, sondern neutrale Seife bei Bedarf. Je nach Beanspruchung empfehlen wir, die Holzoberflächen 1-2 Mal jährlich mit unserem speziellen Pflegeöl zu behandeln, um sie vor Feuchtigkeit zu schützen und die natürliche Schönheit des Holzes zu erhalten.</p>
+                    </div>
+                </div>
+                <div class="faq-item reveal">
+                    <div class="faq-question">
+                        <span>Sind eure Futterstationen für alle Hunde- und Katzenrassen geeignet?</span>
+                        <span>+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Ja, wir bieten Futterstationen in verschiedenen Größen und Ausführungen an, die für alle Hunde- und Katzenrassen geeignet sind. Für kleine Hunderassen und Katzen haben wir kompakte Modelle mit niedrigerer Höhe, während für mittelgroße und große Hunde höhere und stabilere Varianten zur Verfügung stehen. Viele unserer Modelle sind zudem höhenverstellbar, sodass sie individuell an die Größe deines Tieres angepasst werden können. Bei der Auswahl der richtigen Futterstation beraten wir dich gerne persönlich.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact reveal-up" id="contact">
+        <div class="container">
+            <h2>Kontakt</h2>
+            <div class="contact-container">
+                <div class="contact-info reveal-left">
+                    <h3>Wir sind für dich da</h3>
+                    <p>Du hast Fragen zu unseren Produkten oder benötigst eine persönliche Beratung? Unser Team steht dir gerne zur Verfügung.</p>
+                    <p><strong>Telefon:</strong> +49 (0) 123 456 789</p>
+                    <p><strong>E-Mail:</strong> info@tierisch-edel.de</p>
+                    <p><strong>Öffnungszeiten:</strong><br>
+                    Montag - Freitag: 9:00 - 18:00 Uhr<br>
+                    Samstag: 10:00 - 14:00 Uhr</p>
+                    
+                    <div class="social-icons">
+                        <a href="#" class="social-icon">
+                            <i>f</i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i>i</i>
+                        </a>
+                        <a href="#" class="social-icon">
+                            <i>p</i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-Mail</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Betreff</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" class="form-control" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Nachricht senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TIERISCH EDEL</h3>
+                    <p>Hochwertige Designprodukte für Hunde und Katzen, die Funktionalität und Ästhetik perfekt vereinen.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Produkte</h3>
+                    <ul>
+                        <li><a href="#categories">Futterstationen für Hunde</a></li>
+                        <li><a href="#categories">Futterstationen für Katzen</a></li>
+                        <li><a href="#categories">Napferhöhungen</a></li>
+                        <li><a href="#categories">Futternäpfe</a></li>
+                        <li><a href="#categories">Zubehör</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Service</h3>
+                    <ul>
+                        <li><a href="#contact">Versand & Lieferung</a></li>
+                        <li><a href="#contact">Zahlungsarten</a></li>
+                        <li><a href="#contact">Rücksendungen</a></li>
+                        <li><a href="#contact">Garantie</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Über uns</h3>
+                    <ul>
+                        <li><a href="#intro">Unsere Geschichte</a></li>
+                        <li><a href="#intro">Philosophie</a></li>
+                        <li><a href="#features">Materialien</a></li>
+                        <li><a href="#awards">Nachhaltigkeit</a></li>
+                        <li><a href="#testimonials">Kundenstimmen</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 TIERISCH EDEL. Alle Rechte vorbehalten.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="scroll-top" id="scroll-top">↑</div>
+
+    <script>
+        // Benutzerdefinierter Cursor
+        const cursor = document.createElement('div');
+        cursor.classList.add('custom-cursor');
+        document.body.appendChild(cursor);
+
+        document.addEventListener('mousemove', e => {
+            cursor.style.left = `${e.clientX}px`;
+            cursor.style.top = `${e.clientY}px`;
+        });
+
+        // Hover-Effekt für interaktive Elemente
+        const interactiveElements = document.querySelectorAll('a, button, .configurator-option, .testimonial-dot, .faq-question');
+        interactiveElements.forEach(element => {
+            element.addEventListener('mouseenter', () => {
+                cursor.classList.add('expanded');
+            });
+            
+            element.addEventListener('mouseleave', () => {
+                cursor.classList.remove('expanded');
+            });
+        });
+        
+        // Header-Effekt beim Scrollen
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            const scrollTop = document.querySelector('.scroll-top');
+            
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+                scrollTop.classList.add('visible');
+            } else {
+                header.classList.remove('scrolled');
+                scrollTop.classList.remove('visible');
+            }
+        });
+        
+        // Parallax-Effekt für den Hero-Bereich
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const heroContent = document.querySelector('.hero-content');
+            
+            // Parallax für den Hintergrund
+            hero.style.backgroundPosition = `center ${scrollPosition * 0.5}px`;
+        });
+        
+        // Scroll-to-Top Button
+        document.getElementById('scroll-top').addEventListener('click', function() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Smooth Scroll für Ankerlinks
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Reveal-Animation für Elemente beim Scrollen
+        const revealElements = document.querySelectorAll('.reveal, .reveal-up, .reveal-left, .reveal-right');
+
+        function reveal() {
+            revealElements.forEach(element => {
+                const windowHeight = window.innerHeight;
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < windowHeight - elementVisible) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        reveal(); // Initial check
+        
+        // FAQ toggle functionality
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const isActive = answer.classList.contains('active');
+                
+                // Schließe alle anderen FAQ-Antworten
+                document.querySelectorAll('.faq-answer').forEach(item => {
+                    item.classList.remove('active');
+                });
+                
+                document.querySelectorAll('.faq-question').forEach(item => {
+                    item.querySelector('span:last-child').textContent = '+';
+                });
+                
+                // Öffne die aktuelle Antwort, wenn sie nicht bereits geöffnet war
+                if (!isActive) {
+                    answer.classList.add('active');
+                    question.querySelector('span:last-child').textContent = '-';
+                }
+            });
+        });
+        
+        // Testimonial slider functionality
+        const testimonialDots = document.querySelectorAll('.testimonial-dot');
+        testimonialDots.forEach(dot => {
+            dot.addEventListener('click', () => {
+                // Hide all testimonials
+                document.querySelectorAll('.testimonial').forEach(testimonial => {
+                    testimonial.classList.remove('active');
+                });
+                
+                // Remove active class from all dots
+                testimonialDots.forEach(d => {
+                    d.classList.remove('active');
+                });
+                
+                // Show selected testimonial and activate dot
+                const testimonialId = dot.getAttribute('data-testimonial');
+                document.getElementById(testimonialId).classList.add('active');
+                dot.classList.add('active');
+            });
+        });
+        
+        // Auto-rotate testimonials
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        
+        function rotateTestimonials() {
+            // Hide all testimonials
+            testimonials.forEach(testimonial => {
+                testimonial.classList.remove('active');
+            });
+            
+            // Remove active class from all dots
+            testimonialDots.forEach(dot => {
+                dot.classList.remove('active');
+            });
+            
+            // Show next testimonial
+            currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+            testimonials[currentTestimonial].classList.add('active');
+            testimonialDots[currentTestimonial].classList.add('active');
+        }
+        
+        // Set interval for auto-rotation (every 5 seconds)
+        setInterval(rotateTestimonials, 5000);
+        
+        // Konfigurator-Funktionalität
+        // Schritt 1: Haustier auswählen
+        const petOptions = document.querySelectorAll('#step-1 .configurator-option');
+        const nextButton1 = document.getElementById('next-1');
+        let selectedPet = null;
+        
+        petOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                petOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+                selectedPet = option.getAttribute('data-value');
+                nextButton1.disabled = false;
+            });
+        });
+        
+        nextButton1.addEventListener('click', () => {
+            document.getElementById('step-1').classList.remove('active');
+            document.getElementById('step-2').classList.add('active');
+            document.getElementById('step-indicator-1').classList.remove('active');
+            document.getElementById('step-indicator-1').classList.add('completed');
+            document.getElementById('step-indicator-2').classList.add('active');
+        });
+        
+        // Schritt 2: Material auswählen
+        const materialOptions = document.querySelectorAll('#step-2 .configurator-option');
+        const prevButton2 = document.getElementById('prev-2');
+        const nextButton2 = document.getElementById('next-2');
+        let selectedMaterial = null;
+        
+        materialOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                materialOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+                selectedMaterial = option.getAttribute('data-value');
+                nextButton2.disabled = false;
+            });
+        });
+        
+        prevButton2.addEventListener('click', () => {
+            document.getElementById('step-2').classList.remove('active');
+            document.getElementById('step-1').classList.add('active');
+            document.getElementById('step-indicator-2').classList.remove('active');
+            document.getElementById('step-indicator-1').classList.remove('completed');
+            document.getElementById('step-indicator-1').classList.add('active');
+        });
+        
+        nextButton2.addEventListener('click', () => {
+            document.getElementById('step-2').classList.remove('active');
+            document.getElementById('step-3').classList.add('active');
+            document.getElementById('step-indicator-2').classList.remove('active');
+            document.getElementById('step-indicator-2').classList.add('completed');
+            document.getElementById('step-indicator-3').classList.add('active');
+        });
+        
+        // Schritt 3: Napfgröße auswählen
+        const bowlOptions = document.querySelectorAll('#step-3 .configurator-option');
+        const prevButton3 = document.getElementById('prev-3');
+        const nextButton3 = document.getElementById('next-3');
+        let selectedBowl = null;
+        
+        bowlOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                bowlOptions.forEach(opt => opt.classList.remove('selected'));
+                option.classList.add('selected');
+                selectedBowl = option.getAttribute('data-value');
+                nextButton3.disabled = false;
+            });
+        });
+        
+        prevButton3.addEventListener('click', () => {
+            document.getElementById('step-3').classList.remove('active');
+            document.getElementById('step-2').classList.add('active');
+            document.getElementById('step-indicator-3').classList.remove('active');
+            document.getElementById('step-indicator-2').classList.remove('completed');
+            document.getElementById('step-indicator-2').classList.add('active');
+        });
+        
+        nextButton3.addEventListener('click', () => {
+            document.getElementById('step-3').classList.remove('active');
+            document.getElementById('step-4').classList.add('active');
+            document.getElementById('step-indicator-3').classList.remove('active');
+            document.getElementById('step-indicator-3').classList.add('completed');
+            document.getElementById('step-indicator-4').classList.add('active');
+            
+            // Zusammenfassung aktualisieren
+            updateSummary();
+        });
+        
+        // Schritt 4: Zusammenfassung
+        const prevButton4 = document.getElementById('prev-4');
+        const addToCartButton = document.getElementById('add-to-cart');
+        
+        prevButton4.addEventListener('click', () => {
+            document.getElementById('step-4').classList.remove('active');
+            document.getElementById('step-3').classList.add('active');
+            document.getElementById('step-indicator-4').classList.remove('active');
+            document.getElementById('step-indicator-3').classList.remove('completed');
+            document.getElementById('step-indicator-3').classList.add('active');
+        });
+        
+        addToCartButton.addEventListener('click', () => {
+            alert('Vielen Dank! Deine konfigurierte Futterstation wurde in den Warenkorb gelegt.');
+        });
+        
+        // Zusammenfassung aktualisieren
+        function updateSummary() {
+            const petNames = { 'dog': 'Hund', 'cat': 'Katze' };
+            const materialNames = { 'oak': 'Eiche', 'walnut': 'Nussbaum', 'maple': 'Ahorn' };
+            const bowlNames = { 'small': 'Klein (350ml)', 'medium': 'Mittel (700ml)', 'large': 'Groß (1200ml)' };
+            
+            document.getElementById('summary-pet').textContent = petNames[selectedPet] || '-';
+            document.getElementById('summary-material').textContent = materialNames[selectedMaterial] || '-';
+            document.getElementById('summary-bowl').textContent = bowlNames[selectedBowl] || '-';
+            
+            // Preis berechnen
+            let basePrice = 139;
+            
+            if (selectedPet === 'dog') {
+                if (selectedBowl === 'medium') basePrice = 189;
+                if (selectedBowl === 'large') basePrice = 235;
+            }
+            
+            if (selectedMaterial === 'walnut') basePrice += 20;
+            
+            document.getElementById('summary-price').textContent = `€${basePrice}`;
+            
+            // Vorschaubild aktualisieren
+            let previewImage = 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=2068';
+            
+            if (selectedPet === 'cat') {
+                previewImage = 'https://images.unsplash.com/photo-1604542031658-5799ca5d7936?q=80&w=2070';
+            }
+            
+            document.getElementById('preview-image').src = previewImage;
+        }
+        
+        // Kontaktformular
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Vielen Dank für deine Nachricht! Wir werden uns so schnell wie möglich bei dir melden.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
